@@ -6,3 +6,12 @@ TS Flights back-end will have these main responsibilities:
 The back-end’s primary responsibility is the processing of data, where the front-end’s main responsibility is the displaying of data and handling user interaction. Front-ends process data as well, but heavy data manipulation is generally within the domain of the back-end.
 
 On the front-end we will be using Angular and back-end we will be using NestJS.
+For something like searching for a flight or adding a new flight into the database, our Angular front-end app will make requests to our NestJS back-end using XHR.
+
+If the request is rejected, it will return a negative HTTP status code back to Angular. If the request is accepted, it will then proceed to do the work that it was sent to do...which may include getting all of the flights from New York to Paris or something of that nature.
+
+If the request was accepted and includes a database call, NestJS will make a database query to our database, get the result, and if that database query is a success, return the JSON response to our Angular app with a 200 level status code.
+
+Our Angular app will then use HTML and CSS to make the response pretty so that our users can see all of the flights to Paris on their phone or computer.
+
+You should be able to see with this flow that the user initiates the process on the client, the request goes back to the server, does its work, and then ends up returning back to the client for the end of the process.
