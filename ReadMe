@@ -5,4 +5,4 @@ TS Flights back-end will have these main responsibilities:
 
 The back-end’s primary responsibility is the processing of data, where the front-end’s main responsibility is the displaying of data and handling user interaction. Front-ends process data as well, but heavy data manipulation is generally within the domain of the back-end.
 
-On the front-end we will be using Angular. On the back-end we will be using NestJS.
+On the front-end we will be using Angular and back-end we will be using NestJS.
