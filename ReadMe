@@ -1,7 +1,7 @@
 TS Flights back-end will have these main responsibilities:
 • Handle requests from the front-end for information
 • Create, Read, Update and Delete plane flights in the system
-• Send info back to the front-end in JSON format (JavaScript Object Notation)
+• Send info back to the front-end in JSON format JavaScript Object Notation
 
 The back-ends primary responsibility is the processing of data, where the front-end’s main responsibility is the displaying of data and handling user interaction. Front-ends process data as well, but heavy data manipulation is generally within the domain of the back-end.
 
